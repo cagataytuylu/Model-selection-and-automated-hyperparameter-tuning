@@ -236,7 +236,7 @@ np.mean(np.sqrt(-cross_val_score(voting_reg, x, y, cv=10, scoring="neg_mean_squa
 
 
 
-########################################## ÖDEV 2 ##########################################################
+########################################## ##########################################################
 def val_curve_params(model, x, y, param_name, param_range, scoring="roc_auc", cv=10):
     train_score, test_score = validation_curve(
         model, x=x, y=y, param_name=param_name, param_range=param_range, scoring=scoring, cv=cv)
